@@ -101,7 +101,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('images/home.png') no-repeat;
+    background: url('images/chirag.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -135,7 +135,9 @@ section {
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient( var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    /* -moz-background-clip: text; */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     background-position: -33rem 0;
 }
 
@@ -159,6 +161,7 @@ section {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
+
 .home-content p {
     position: relative;
     font-size: 1.6rem;
@@ -548,10 +551,18 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
+    width: 75%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
     width: 75%;
 }
 
@@ -564,11 +575,19 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 85%;
+    width: 90%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 60%;
+    width: 95%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
+    width: 85%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
+    width: 80%;
 }
 
 .contact {
